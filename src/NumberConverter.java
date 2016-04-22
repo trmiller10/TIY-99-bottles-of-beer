@@ -25,7 +25,7 @@ public class NumberConverter {
     public static String handleSingles(int number) {
 
 
-        String singleString = "singles default";
+        String singleString = "No more ";
 
         switch (number) {
             case 0:

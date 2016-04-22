@@ -24,4 +24,18 @@ public class NumberConverterOutputTest {
 
 
     }
+    @Test
+    /**
+     * Given: Scanner input and int startingNumber
+     * When: 80 is input
+     * Then: 80 is printed
+     */
+    public void when80InputScannerThen80Printed(){
+        //Arrange
+
+        //Act
+//String eighty = NumberConverterOutput.input.nextInt(80);
+        //Assert
+    }
+
 }
