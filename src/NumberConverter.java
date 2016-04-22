@@ -29,7 +29,7 @@ public class NumberConverter {
 
         switch (number) {
             case 0:
-                singleString = "zero";
+                singleString = "zero ";
                 //ends case program flow
                 break;
             case 1:
