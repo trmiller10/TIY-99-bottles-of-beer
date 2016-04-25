@@ -33,15 +33,19 @@ public class NumberConverterOutput {
         for (bottlesOfBeer = startingNumber; bottlesOfBeer > 0; bottlesOfBeer = bottlesOfBeer - removalNumber) {
 
             if(bottlesOfBeer == 1){
-                System.out.println(NumberConverter.toText(bottlesOfBeer) + "single bottle of beer on the wall, "
-                        + NumberConverter.toText(bottlesOfBeer) + "single bottle of beer! " +
+                System.out.println(NumberConverter.toText(bottlesOfBeer) + "single " + containerType + " of " + containerContent + " on the " + removalSurface + " , "
+                        + NumberConverter.toText(bottlesOfBeer) + "single " + containerType + " of " + containerContent + "!  " +
                         "Take it down, pass it around, " + NumberConverter.toText(bottlesOfBeer - removalNumber)
-                        + "bottles of beer on the wall!");
-            }
-            else System.out.println(NumberConverter.toText(bottlesOfBeer) + containerType + "of " + containerContent + "on the " + removalSurface + ", "
-                    + NumberConverter.toText(bottlesOfBeer) + containerType + "of " + containerContent +
-                    "Take " + NumberConverter.toText(removalNumber) + "down, pass it around, " + NumberConverter.toText(bottlesOfBeer - removalNumber)
-                    + containerType + "of " + containerContent + "on the " + removalSurface + "!");
+                        + containerType + " of " + containerContent + " on the " + removalSurface + "!");
+            } else if(removalNumber > 1){
+                System.out.println(NumberConverter.toText(bottlesOfBeer) + containerType + "s of " + containerContent + " on the " + removalSurface + ", "
+                        + NumberConverter.toText(bottlesOfBeer) + containerType + "s of " + containerContent +
+                        ".  Take " + NumberConverter.toText(removalNumber) + "down, pass them around, " + NumberConverter.toText(bottlesOfBeer - removalNumber)
+                        + containerType + "s of " + containerContent + " on the " + removalSurface + "!");
+            } else System.out.println(NumberConverter.toText(bottlesOfBeer) + containerType + "s of " + containerContent + " on the " + removalSurface + ", "
+                    + NumberConverter.toText(bottlesOfBeer) + containerType + "s of " + containerContent +
+                    ".  Take " + NumberConverter.toText(removalNumber) + "down, pass it around, " + NumberConverter.toText(bottlesOfBeer - removalNumber)
+                    + containerType + "s of " + containerContent + " on the " + removalSurface + "!");
 
         }
     }
